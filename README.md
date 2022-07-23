@@ -3,11 +3,11 @@
 This is a [k6](https://go.k6.io/k6) extension using the
 [xk6](https://github.com/grafana/xk6) system.
 
-It reads file during the runtime in concurrent and thread safe manner. Each line will be read only once until 
-the whole file has been read, then it will start from the beginning of the file.
+It is lightweight, fast and concurrent file reader. Each line will be read only once until 
+the end of file, then it will start from the beginning.
 The only way to preserve the read line order is to use one VU `-u 1`. 
 
-It can be very helpful if you need to read very large files, and you don't want to store them in memory 
+It can be very helpful for reading very large files, and you don't want to store them in memory 
 with [SharedArray](https://k6.io/docs/javascript-api/k6-data/sharedarray/)
 
 ## Build
