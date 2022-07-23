@@ -7,7 +7,7 @@ It is lightweight, fast and concurrent file reader. Each line will be read only 
 the end of file, then it will start from the beginning.
 The only way to preserve the read line order is to use one VU `-u 1`. 
 
-It can be very helpful for reading very large files, and you don't want to store them in memory 
+It can be very helpful for reading very large files without storing it in memory 
 with [SharedArray](https://k6.io/docs/javascript-api/k6-data/sharedarray/)
 
 ## Build
