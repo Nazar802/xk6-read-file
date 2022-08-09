@@ -26,7 +26,7 @@ Then:
 
 2. Build the binary:
   ```shell
-  xk6 build --with github.com/grafana/xk6-exec@latest
+  xk6 build --with github.com/radepopovic/xk6-read-file
   ```
 
 ## Development
