@@ -1,4 +1,4 @@
-module xk6-read-file
+module github.com/radepopovic/xk6-read-file
 
 go 1.18
 
